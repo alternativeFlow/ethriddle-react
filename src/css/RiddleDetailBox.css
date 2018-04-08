@@ -1,0 +1,18 @@
+.RiddleDetailBoxWell {
+	background-color: lightSalmon;
+	width: 50%;
+	margin-left: 25%;
+}
+
+.RiddleDetailBoxContent {
+	text-align: center;
+}
+
+.BackButtonSalmon {
+	color: white;
+	background-color: Salmon;
+}
+
+.RiddleDetailBoxMetamaskGuessMessage {
+	text-align: center;
+}

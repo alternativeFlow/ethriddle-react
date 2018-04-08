@@ -1,0 +1,11 @@
+.HomepageTitle {
+	color: lightSalmon;
+	font-size: 1000%;
+}
+
+.ChatBox {
+	border-style: solid;
+	border-color: lightSalmon;
+	border-radius: 5px;
+	padding-bottom: 5px;
+}

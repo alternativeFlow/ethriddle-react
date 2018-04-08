@@ -1,0 +1,24 @@
+.UserRiddleDetailBoxWell {
+	background-color: lightGreen;
+	width: 50%;
+	margin-left: 25%;
+}
+
+.UserRiddleDetailBoxContent {
+	text-align: center;
+}
+
+.BackButtonGreen {
+	color: white;
+	background-color: SpringGreen;
+}
+
+.UserRiddleDetailBoxInfoButton {
+	color: white;
+	background-color: SpringGreen;
+}
+
+.RiddleCancelButton {
+	color: white;
+	background-color: Crimson;
+}

@@ -1,0 +1,9 @@
+.RiddleWell {
+	background-color: lightSalmon;
+}
+
+.GuessButton {
+	background-color: Salmon;
+	color: white;
+	border-radius: 5px;
+}
