@@ -5,7 +5,7 @@ export default {
 		login: (signature) => 
 			axios.post('https://ethriddle-api.herokuapp.com/api/auth', { signature }).then(res => res.data.user),
 		signup: user =>
-			axios.post('https://ethriddle-api.herokuapp.com/users', { user }).then(res => res.data.userRecord),
+			axios.post('https://ethriddle-api.herokuapp.com/api/users', { user }).then(res => res.data.userRecord),
 		confirm: token =>
 			axios.post("https://ethriddle-api.herokuapp.com/api/auth/confirmation", { token }).then(res => res.data.user),
 		resetPasswordRequest: email =>
