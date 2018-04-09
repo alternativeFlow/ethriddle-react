@@ -46,7 +46,7 @@ class HomePage extends React.Component {
 		//or if no web3
 		return checkForWeb3Network(this.web3).then(result => {
 			//switch testnet for mainnnet in production
-			if (result=="No web3"||result=="netError"||result=="ropsten") {
+			if (result=="No web3"||result=="netError"||result="unknown"||result=="ropsten") {
 				if (result=="ropsten") {
 					if (!this.props.isAuthenticated) {
 						return true;
