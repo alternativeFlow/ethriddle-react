@@ -203,7 +203,6 @@ class HomePage extends React.Component {
 							<div className="SeperatingBarrierSalmon">
 								{this.props.renderRiddles ? (
 									<div>
-										{this.props.getAllRiddles()}
 										<SearchBox />
 										<RiddlesBox />
 									</div>
