@@ -18,9 +18,9 @@ export const getWeb3 = new Promise( (resolve, reject) => {
 			resolve(results);
 		}
 		else {
-			// var provider = new Web3.providers.HttpProvider('http://127.0.0.1:7545');
+			var provider = new Web3.providers.HttpProvider('http://127.0.0.1:7545');
 
-			web3 = null;
+			web3 = new Web3(provider);
 
 			results = {
 				web3: web3
