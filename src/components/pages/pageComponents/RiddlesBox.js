@@ -30,7 +30,6 @@ class RiddlesBox extends React.Component {
 				this.web3 = results.web3;
 				this.contract = initContract(this.web3);
 			});
-		this.props.getAllRiddles();
 	}
 
 	componentWillUnmount() {
