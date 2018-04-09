@@ -42,7 +42,7 @@ class RiddlesBox extends React.Component {
 		let riddlesToDisplay = this.props.riddlesToDisplay;
 		//HACK: gives warning about how render should be a pure function
 		if (Object.keys(riddlesToDisplay).length ===0 && riddlesToDisplay.constructor === Object) {
-			getAllRiddles().then(() => {
+			this.props.getAllRiddles().then(() => {
 				setRiddlesToDisplay(this.props.riddles);
 			});
 		}
