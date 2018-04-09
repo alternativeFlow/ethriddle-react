@@ -30,6 +30,7 @@ class RiddlesBox extends React.Component {
 				this.web3 = results.web3;
 				this.contract = initContract(this.web3);
 			});
+		this.props.getAllRiddles();
 	}
 
 	componentWillUnmount() {
@@ -42,9 +43,7 @@ class RiddlesBox extends React.Component {
 		let riddlesToDisplay = this.props.riddlesToDisplay;
 		//HACK: gives warning about how render should be a pure function
 		if (Object.keys(riddlesToDisplay).length ===0 && riddlesToDisplay.constructor === Object) {
-			this.props.getAllRiddles().then(() => {
-				setRiddlesToDisplay(this.props.riddles);
-			});
+			setRiddlesToDisplay(this.props.riddles);
 		}
 
 		let riddlesList = [];
