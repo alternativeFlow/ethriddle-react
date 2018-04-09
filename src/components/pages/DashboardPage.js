@@ -17,8 +17,6 @@ import {
 	handleCancelRiddle,
 	handleCheckForActivity,
 	handleGetBalance,
-	handleGetOwnerOfRiddle,
-	handleGetOwnerOfEthRiddle,
 	checkForAndUpdateRiddleActivity } from '../../ethUtils/ethUtils';
 import '../../css/DashboardPage.css';
 
@@ -89,24 +87,6 @@ class DashboardPage extends React.Component {
 		});		
 	};
 
-	handleGetOwnerOfRiddle = (riddle) => {
-		let web3 = this.web3;
-		let contract = this.contract;
-
-		handleGetOwnerOfRiddle(web3, contract, riddle).then(owner => {
-			alert(owner);
-		});		
-	};
-	//for test
-	handleGetOwnerOfEthRiddle = (riddle) => {
-		let web3 = this.web3;
-		let contract = this.contract;
-
-		handleGetOwnerOfEthRiddle(web3, contract, riddle).then(owner => {
-			alert(owner);
-		});		
-	};
-
 	componentWillMount() {
 		getWeb3
 			.then(results => {
@@ -147,8 +127,6 @@ class DashboardPage extends React.Component {
 								handleCancelRiddle={this.handleCancelRiddle}
 								handleCheckForActivity={this.handleCheckForActivity}
 								handleGetBalance={this.handleGetBalance}
-								handleGetOwnerOfRiddle={this.handleGetOwnerOfRiddle}
-								handleGetOwnerOfEthRiddle={this.handleGetOwnerOfEthRiddle}
 							/>
 							) : (
 							<div>

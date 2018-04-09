@@ -20,7 +20,7 @@ class FaqPage extends React.Component {
 					<Row>
 						<Col>
 							<h5>What is EthRiddle?</h5>
-							<p>A means to transcend your earthly trappings</p>
+							<p>A way to earn eth by guessing and creating riddles</p>
 						</Col>
 					</Row>
 					<Row>
@@ -44,6 +44,7 @@ class FaqPage extends React.Component {
 					<Row>
 						<Col>
 							<h5>Something went wrong, how can I contact you?</h5>
+							<p>Please note EthRiddle is not responsible for the loss of any ether due to contract upgrade, security breach, termination of services, ect.</p>
 							<p>You can email at EthRiddle.help@gmail.com</p>
 						</Col>
 					</Row>

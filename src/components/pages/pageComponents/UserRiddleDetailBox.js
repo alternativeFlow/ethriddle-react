@@ -36,8 +36,6 @@ class UserRiddleDetailBox extends React.Component {
 								</Col>
 								<Col md={11}>
 									<Button onClick={() => this.props.handleGetBalance(riddle)} bsClass="UserRiddleDetailBoxInfoButton">Get Balance</Button>
-									<Button onClick={() => this.props.handleGetOwnerOfRiddle(riddle)} bsClass="UserRiddleDetailBoxInfoButton">Check Owner</Button>
-									<Button onClick={() => this.props.handleGetOwnerOfEthRiddle(riddle)} bsClass="UserRiddleDetailBoxInfoButton">Check EthRiddle Owner</Button>
 									<Button onClick={() => this.props.handleCheckForActivity(riddle)} bsClass="UserRiddleDetailBoxInfoButton">Check Activity</Button>
 									<Button onClick={() => this.props.handleCancelRiddle(riddle)} bsClass="RiddleCancelButton">Cancel Riddle</Button>
 								</Col>
@@ -56,9 +54,7 @@ UserRiddleDetailBox.propTypes = {
 	handleWithdraw: PropTypes.func.isRequired,
 	handleCancelRiddle: PropTypes.func.isRequired,
 	handleCheckForActivity: PropTypes.func.isRequired,
-	handleGetBalance: PropTypes.func.isRequired,
-	handleGetOwnerOfRiddle: PropTypes.func.isRequired,
-	handleGetOwnerOfEthRiddle: PropTypes.func.isRequired
+	handleGetBalance: PropTypes.func.isRequired
 }
 
 export default UserRiddleDetailBox;
