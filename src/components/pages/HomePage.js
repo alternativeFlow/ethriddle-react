@@ -147,15 +147,6 @@ class HomePage extends React.Component {
 				});
 	};
 
-	checkAllRiddlesForActivity = () => {
-		let riddlesToDisplay = this.props.riddlesToDisplay;
-		Object.keys(riddlesToDisplay).forEach(index => {
-			checkForAndUpdateRiddleActivity(this.web3, this.contract, riddlesToDisplay[index]);
-			if (index+1==Object.keys(riddlesToDisplay).length) {
-				this.props.getAllRiddles();
-			}
-		});
-	};
 
 	signUpBoxSubmit = (data) => {
 		return this.props.signup(data);
@@ -175,7 +166,6 @@ class HomePage extends React.Component {
 					this.contract = initContract(this.web3);
 
 					this.determineHomepageUI();
-					this.checkAllRiddlesForActivity();
 				}	
 			});
 		setTimeout(this.startPoll, 3000);

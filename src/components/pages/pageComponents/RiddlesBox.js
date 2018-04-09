@@ -24,6 +24,16 @@ class RiddlesBox extends React.Component {
 		setRiddleToDetail(riddle);
 	};
 
+	checkAllRiddlesForActivity = () => {
+		let riddlesToDisplay = this.props.riddlesToDisplay;
+		Object.keys(riddlesToDisplay).forEach(index => {
+			checkForAndUpdateRiddleActivity(this.web3, this.contract, riddlesToDisplay[index]);
+			if (index+1==Object.keys(riddlesToDisplay).length) {
+				this.props.getAllRiddles();
+			}
+		});
+	};
+
 	componentDidMount() {
 		getWeb3
 			.then(results => {
@@ -45,6 +55,12 @@ class RiddlesBox extends React.Component {
 			this.props.getAllRiddles().then(() => {
 				setRiddlesToDisplay(this.props.riddles);
 			});
+			getWeb3.then(results => {
+				this.web3 = results.web3;
+				this.contract = initContract(this.web3);
+				
+				this.checkAllRiddlesForActivity();
+			})
 		}
 
 		let riddlesList = [];
