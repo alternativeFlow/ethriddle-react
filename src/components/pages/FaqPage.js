@@ -20,7 +20,7 @@ class FaqPage extends React.Component {
 					<Row>
 						<Col>
 							<h5>What is EthRiddle?</h5>
-							<p>A way to earn eth by guessing and creating riddles</p>
+							<p>A way to earn eth by guessing the answers to riddles and creating riddles to collect eth from guesses.</p>
 						</Col>
 					</Row>
 					<Row>
@@ -32,7 +32,7 @@ class FaqPage extends React.Component {
 					<Row>
 						<Col>
 							<h5>How do I play?</h5>
-							<p>Sign up and start! To play, you need Metamask, which you can get <Link to="https://metamask.io/" >here.</Link></p>
+							<p>Sign up and start! To play, you need Metamask, which you can get <a href="https://metamask.io/" >here.</a></p>
 						</Col>
 					</Row>
 					<Row>
@@ -44,7 +44,7 @@ class FaqPage extends React.Component {
 					<Row>
 						<Col>
 							<h5>Something went wrong, how can I contact you?</h5>
-							<p>Please note EthRiddle is not responsible for the loss of any ether due to contract upgrade, security breach, termination of services, ect.</p>
+							<p>Please note EthRiddle is not responsible for the loss of any ether due to contract upgrade, contract failure, security breach, termination of services, ect.</p>
 							<p>You can email at EthRiddle.help@gmail.com</p>
 						</Col>
 					</Row>
