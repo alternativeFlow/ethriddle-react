@@ -23,7 +23,7 @@ export default {
 		createRiddle: data =>
 			axios.post("https://ethriddle-api.herokuapp.com/api/riddles/create_riddle", { data }).then(res=>res.data.riddle),
 		updateRiddleActivity: (id, currentContractActivity) => 
-			axios.post("https://ethriddle-api.herokuapp.com//api/riddles/update_riddle_activity", {id, currentContractActivity}).then(res=>res.data.riddle)
+			axios.post("https://ethriddle-api.herokuapp.com/api/riddles/update_riddle_activity", {id, currentContractActivity}).then(res=>res.data.riddle)
 	},
 	chat: {
 		getChat: () =>

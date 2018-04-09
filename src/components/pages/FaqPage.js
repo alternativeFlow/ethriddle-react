@@ -11,6 +11,7 @@ class FaqPage extends React.Component {
 				<Well className="FaqPageWell">
 					<Row>
 						<Col md={2}>
+							<p><Link to="/">Homepage</Link></p>
 						</Col>
 						<Col md={10}>
 							<h2>Frequently Asked Questions</h2>

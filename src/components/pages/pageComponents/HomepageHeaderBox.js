@@ -18,7 +18,7 @@ class HomepageHeaderBox extends React.Component {
 							<div>
 								Guess riddles and win eth!
 								{ this.props.renderMetamaskMessages ? (
-									<p>To get started, install Metamask. If you already have it installed, please sign in. If you need more info you can find it in the FAQ.</p>
+									<p>To get started, install Metamask. If you already have it installed, please sign in. If you need more info you can find it in the <Link to="/faq">FAQ.</Link></p>
 									) : (
 									<p></p>
 									)

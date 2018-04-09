@@ -39,7 +39,7 @@ class AddMessageForm extends React.Component {
 	};
 
 	onlyLettersAndDigits = (str) => {
-      return str.match("^[A-z0-9 !?']+$");
+      return str.match("^[A-z0-9 !?',.]+$");
     };
 
 	validate = data => {

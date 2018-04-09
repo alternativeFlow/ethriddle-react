@@ -30,6 +30,13 @@ class WithdrawForm extends React.Component {
 				// .catch(err =>
 				// 	this.setState({ errors: err.response.data.errors, loading: false})
 				// );
+			this.setState({
+				data: {
+					withdrawAmt: ''
+				},
+				loading:false,
+				errors: {}
+			});
 		}
 	};
 
