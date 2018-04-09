@@ -69,12 +69,12 @@ class AddRiddleForm extends React.Component {
 
     onlyLowercaseLetters = (str) => {
     	return str.match("^[a-z ]+$");
-    }
+    };
 
 	validate = data => {
 		const errors = {};
-		if (!this.onlyLettersT(data.title)||!(data.title.length<=50)||!(data.title.length>0)) errors.title = "Invalid title, (a-Z only), Max 50 characters";
-		if (!this.onlyLettersR(data.riddle)||!(data.riddle.length<=560)||!(data.riddle.length>0)) errors.riddle = "Invalid riddle, (a-Z and ?!' only), Max 560 characters";
+		if (!this.onlyLettersT(data.title)||!(data.title.length<=50)||!(data.title.length>0)) errors.title = "Invalid title, (a-Z ?!',.only), Max 50 characters";
+		if (!this.onlyLettersR(data.riddle)||!(data.riddle.length<=560)||!(data.riddle.length>0)) errors.riddle = "Invalid riddle, (a-Z and ?!',. only), Max 560 characters";
 		if (!this.onlyLowercaseLetters(data.answer)||!(data.answer.length<=15)||!(data.answer.length>0)) errors.answer = "Invalid answer, (a-z only), Max 15 characters";
 		if (!this.isNumeric(data.payoutAmt)||!(data.payoutAmt!='')) errors.payoutAmt = "Invalid Payout Amount, Real Numbers only";
 		if (!this.isNumeric(data.guessCost)||!(data.guessCost!='')) errors.guessCost = "Invalid Guess Cost, Real Numbers only";
