@@ -172,13 +172,11 @@ class HomePage extends React.Component {
 	}
 
 	render() {
-		this.props.getAllRiddles();
 		return (
 			//Render signupform if signed into metamask and unregistered or render homepage
 			<div>
 				{ this.props.renderHomepage ? (
 					<div>
-						{this.props.getAllRiddles()}
 						{this.props.isAuthenticated ? (
 							<Link to="/dashboard" onClick={() => this.props.setRiddleToDetail({})}>User Page</Link>
 							) : (
