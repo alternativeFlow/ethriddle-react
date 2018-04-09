@@ -172,6 +172,7 @@ class HomePage extends React.Component {
 	}
 
 	render() {
+		this.props.getAllRiddles();
 		return (
 			//Render signupform if signed into metamask and unregistered or render homepage
 			<div>
