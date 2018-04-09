@@ -169,6 +169,7 @@ class HomePage extends React.Component {
 				}	
 			});
 		setTimeout(this.startPoll, 3000);
+		this.props.getAllRiddles();
 	}
 
 	render() {

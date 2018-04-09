@@ -10,7 +10,7 @@ export const getAllRiddlesSuccess = (riddles) => ({
 	
 
 export const getAllRiddles = () => (dispatch) => {
-	api.riddles.getAllRiddles().then(riddles =>  {
+	return api.riddles.getAllRiddles().then(riddles =>  {
 		dispatch(getAllRiddlesSuccess(riddles))
 	});
 };
