@@ -33,7 +33,6 @@ class AddRiddleForm extends React.Component {
 		this.setState({ errors });
 		if (Object.keys(errors).length === 0) {
 			this.setState({ loading: true });
-			console.log("AddRiddleForm submit reached");
 			this.props
 				.submit(this.state.data);
 				// .catch(err =>
@@ -74,8 +73,6 @@ class AddRiddleForm extends React.Component {
 
 	validate = data => {
 		const errors = {};
-		console.log(!this.onlyLetters(data.title));
-		console.log(data.title);
 		if (!this.onlyLettersT(data.title)||!(data.title.length<=50)||!(data.title.length>0)) errors.title = "Invalid title, (a-Z only), Max 50 characters";
 		if (!this.onlyLettersR(data.riddle)||!(data.riddle.length<=560)||!(data.riddle.length>0)) errors.riddle = "Invalid riddle, (a-Z and ?!' only), Max 560 characters";
 		if (!this.onlyLowercaseLetters(data.answer)||!(data.answer.length<=15)||!(data.answer.length>0)) errors.answer = "Invalid answer, (a-z only), Max 15 characters";
